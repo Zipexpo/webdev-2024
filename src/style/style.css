@@ -1,0 +1,110 @@
+:root {
+    --primary-color:#F0CDFF;
+    --secondary-color: #293039;
+    --primary-text: #6C065E;
+    --secondary-text: #f3f3f3;
+    --neutural-color: #FFFEF4;
+    --round: 40px;
+    --padding: 30px;
+}
+
+body {
+    font-size: 0.8rem;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+}
+
+#content-holder {
+    width:70%; 
+    display: flex; 
+    flex-direction: column; 
+    border-radius: var(--round) 0px 0px var(--round); 
+    background-color: var(--primary-color); 
+    overflow: hidden;
+}
+
+#personal-holder {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    padding: var(--padding);
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--padding);
+}
+
+#personal-holder img {
+    border-radius: 30px;
+}
+
+#personal-holder img:hover {
+    border-radius: 50%;
+}
+
+#personal-holder button {
+    background-color: var(--secondary-color)00;
+    color: inherit;
+    border: 2px solid var(--primary-color);
+}
+
+#personal-holder button:active {
+    border-radius: 20px;
+    background-color: var(--primary-color);
+    color: var(--primary-text);
+}
+
+#header-holder
+{
+    background-color: var(--neutural-color);
+    color: var(--secondary-color);
+    padding: var(--padding);
+    padding-left: calc( var(--padding) * 1.5 );
+    border-bottom-left-radius: var(--round);
+}
+
+#header-holder h1 {
+    letter-spacing: .1rem;
+    text-transform: uppercase;
+}
+
+.content {
+    background-color: var(--primary-color);
+    color: #6C065E;
+    padding: var(--padding);
+    padding-left: calc( var(--padding) * 1.5 );
+    padding-right: 20%;
+}
+
+.content .title{
+    text-transform: capitalize;
+}
+
+.content p{
+    text-align: justify;
+}
+
+button {
+    min-width: 100px;
+    padding: 10px 20px;
+    font-size: 0.9em;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    color: inherit;
+    background-color: var(--neutural-color);
+}
+
+button:hover {
+    border-radius: 20px;
+}
+
+/* button in click */
+button:active {
+    border-radius: 20px;
+    background-color: var(--primary-text);
+    color: var(--neutural-color);
+}

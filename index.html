@@ -4,12 +4,37 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>My web</title>
+
+        <!-- google font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+        
+        <!-- css -->
+        <link rel="stylesheet" href="src/style/style.css">
     </head>
     <body>
-        <h1 style="margin-bottom: 0;">Hello!!!</h1>
-        <h2 style="color:rgb(20, 220, 183); margin-top: 0;">I am ...</h2>
-        <p>I am living in a <strong>big</strong> house and I have a <em>big big cat</em></p>
-        <a href="https://www.google.com" target="_blank">CLick here</a>
-        <img title='I am cute "Cat"' src="src/img/avatar.jpg" width="200" height="200"/>
+        <div style="display: flex; background-color: #293039;">
+            <div id="personal-holder">
+                <img title='I am cute "Cat"' src="src/img/avatar.jpg" width="200" height="200"/>
+                <button>Email me</button>
+            </div>
+            <div id="content-holder">
+                <div id="header-holder">
+                    <h1>Ngan V.T. Nguyen</h1>
+                    <h4>"Simple is perfect!"</h4>
+                </div>
+                <div class="content">
+                    <h2 class="title">About me</h2>
+                    <p>
+                        I am currently a student of Physics and Computer Science at VNU-HCMUS, where I have developed strong skills in both disciplines. I have a keen interest in researching computer science, which has led me to earn a special prize in my university's Student Research Contest. Besides academics, I enjoy playing video games in my free time. My proficiency in English allows me to effectively read and listen to various resources, enhancing both my studies and personal interests.
+                    </p>
+                    <div style="display: flex; justify-content: space-between;">
+                        <button>Resume</button>
+                        <button>Projects</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </body>
 </html>
